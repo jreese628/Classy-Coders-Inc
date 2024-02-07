@@ -5,9 +5,9 @@ class Manager extends Employees {
     constructor(name, position, salary, department){
         super(name, position, salary)
         this.department = department
-        this.employeesManaged = []
+        this.#employeesManaged = []
     }
-    employeesManaged(){
+    getEmployeesManaged(){
         return this.#employeesManaged
     }
 
