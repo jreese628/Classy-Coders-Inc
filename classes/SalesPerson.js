@@ -1,4 +1,4 @@
-const Employees = require('./Employees');
+const { Employees } = require('./Employees');
 
 class SalesPerson extends Employees{
     #totalSales
@@ -9,7 +9,7 @@ class SalesPerson extends Employees{
         this.clients = clients;
         this.#totalSales = 0;
     }
-    getSalesNumbers() {
+    getSalesNumber() {
         return this.#totalSales; 
     }
     makeSale(amount) {
