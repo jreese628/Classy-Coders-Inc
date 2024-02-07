@@ -1,6 +1,6 @@
-const Employee = require('./Employees');
+const Employees = require('./Employees');
 
-class SoftwareEngineer extends Employee{
+class SoftwareEngineer extends Employees{
     #programmingLanguages;
 
     constructor(name, title, salary, isHired, programmingLanguages) {
